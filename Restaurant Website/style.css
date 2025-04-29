@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav{
+    box-shadow: 5px 5px 5px rgba(1,1,1,0.05);
+    position: sticky;
+    background: white;
+    margin-bottom: 30px;
+    top: 0;
+    z-index: 50;
+    padding: 10px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.navlogo{
+    height: 70px;
+    width: 150px;
+    overflow: hidden;
+    
+}
+
+.navimg{
+    height: 70px;
+    width: 150px;
+}
+
+.baricon{
+    font-size: 30px;
+    
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 100px;
+}
+.herocontent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.discount{
+    background-color: green;
+    text-align: center;
+    display: flex;
+    align-self: flex-start;
+    color: white;
+    font-size: 25px;
+    padding: 5px;
+   
+}
+
+.heroimage{
+    height: 450px;
+    width: 450px;
+   
+   
+}
+.heroimage img{
+    height: 450px;
+    width: 450px;
+}
+.enjoy{
+    
+    font-size: 80px;
+}
+
+.belowenjoy{
+    font-size: 18px;
+    font-weight: bold;
+   
+}
+
+button{
+    background-color: orange;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    font-size: 20px;
+    align-self: flex-start;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+
+@media (max-width: 786px){
+    .hero{
+        flex-direction: column;
+    }
+    .heroimage{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+    }
+    .heroimage img{
+        width: 90%;
+    }
+    .herocontent{
+        padding : 20px;
+        gap: 5px;
+        display: flex;
+        align-self: flex-start;
+    
+    }
+    .enjoy {
+        font-size: 30px;
+    }
+    .belowenjoy{
+        font-size: 20px;
+    }
+    .explorenow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .features{
+        padding: 20px;
+        flex-direction: column;
+        
+    }
+    .feature{
+        flex-direction: column;
+    }
+    .footercontainer{
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+
+}
+.feature:hover{
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(1,1,1,0.05);
+    
+}
+.features{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+.feature{
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    transition: 0.2s ease-in-out;
+}
+.feature img{
+    width: 72px;
+}
+.divider{
+    border: 1px solid grey;
+    margin-top: 20px 0px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.ourmenu{
+ background-color: green;
+ color: white;
+ font-size: 30px;
+ padding: 10px;
+ display: flex;
+ align-self: center;
+ margin-top: 30px;
+ margin-bottom: 35px;
+}
+.menu h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.grid{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "I1 I1 I2 I3"
+    "I1 I1 I2 I7"
+    "I4 I5 I6 I7";
+}
+
+.item1{
+    grid-area: I1;
+}
+.item2{
+    grid-area: I2;
+}
+.item3{
+    grid-area: I3;
+}
+.item4{
+    grid-area: I4;
+}
+.item5{
+    grid-area: I5;
+}
+.item6{
+    grid-area: I6;
+}
+.item7{
+    grid-area: I7;
+}
+.grid{
+    padding: 10px;
+}
+.grids-image{
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+.grids-image:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+.footercontainer{
+    margin-top: 30px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconcontainer{
+    display: flex;
+    gap: 15px;
+    font-size: 32px;
+}
+
+footer{
+    background-color: #fff0db;
+}
+
+.linklists h3{
+    margin-bottom: 10px;
+    color: gray;
+}
+.linklists ul{
+    list-style: none;
+}
+.linklists ul li{
+    font-size: 16px;
+    line-height: 1.5;
+}
+.newsletter h3{
+    margin-bottom: 10px;
+    color: gray;
+}
+
+.newsletter input{
+    padding: 5px 40px;
+    margin-bottom: 10px;
+}
